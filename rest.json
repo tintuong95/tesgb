@@ -1,0 +1,18 @@
+{
+	"Id": 206219,
+	"OrderId": 0,
+	"OperationNo": 60,
+	"LineId": 0,
+	"StateId": 12,
+	"QtyStaff": 0,
+	"QtyFp": 0,
+	"QtyPass": 0,
+	"QtyFail": 0,
+	"LeaderId": 0,
+	"ShiftId": 1,
+	"CommentId": 192,
+	"StartEvent": "2023-12-12T11:51:00.399+07:00",
+	"EndEvent": null,
+	"MachRunFactorMinBySo": 14.36,
+	"TargetPph": 300
+}

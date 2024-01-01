@@ -1,0 +1,36 @@
+version: '3.8'
+services:
+  mysql-db:
+    image: mysql:5.7
+    container_name: mysql-container
+    environment:
+      MYSQL_ROOT_PASSWORD: 'root'
+      MYSQL_PASSWORD: 'root'
+      MYSQL_DATABASE: 'testdb'
+      MYSQL_ROOT_HOST: '%'
+    ports:
+      - '3306:3306'
+    # volumes:
+    #   - mysql-data:/var/lib/mysql
+
+  # server:
+  #   image: node:18
+  #   command: sh -c "yarn install && yarn run dev "
+  #   ports:
+  #     - 3000:3000
+  #   depends_on:
+  #     - mysql
+  #   working_dir: /app
+  #   volumes:
+  #     - ./:/app
+  #   environment:
+  #     DB_HOST: 'mysql'
+  #     DB_USERNAME: 'root'
+  #     DB_PASSWORD: 'root'
+  #     DB_NAME: 'testdb'
+  #     PORT: 3000
+  #     SALTROUNDS: 11
+  #     SECRET_KEY: NEW_KEY_SECRET
+
+volumes:
+  mysql-data:

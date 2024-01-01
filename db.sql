@@ -1,0 +1,4 @@
+CREATE DATABASE IF NOT EXISTS test_1;
+
+ALTER DATABASE
+    test_1 CHARACTER SET utf8mb4 COLLATE utf8mb4_vietnamese_ci;
